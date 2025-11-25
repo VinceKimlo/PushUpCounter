@@ -1,0 +1,43 @@
+[versions]
+kotlin = "1.9.10"
+agp = "8.2.2"
+compileSdk = "34"
+minSdk = "24"
+targetSdk = "34"
+compose = "1.5.1"
+compose_compiler = "1.5.3"
+activity_compose = "1.7.2"
+lifecycle = "2.6.1"
+coroutines = "1.7.3"
+cameraX = "1.2.2"
+mlkit_pose = "17.0.5" # ML Kit pose-detection-accurate
+core_ktx = "1.10.1"
+material3 = "1.1.1"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity_compose" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+
+camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraX" }
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraX" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraX" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraX" }
+
+mlkit-pose-accurate = { module = "com.google.mlkit:pose-detection-accurate", version.ref = "mlkit_pose" }
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# Optional helper libs
+material = { module = "com.google.android.material:material", version = "1.9.0" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+agp = { id = "com.android.application", version.ref = "agp" }
